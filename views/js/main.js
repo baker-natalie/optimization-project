@@ -421,7 +421,7 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
   
-    // Changes the slider value to a percent width
+  // Changes the slider value to a percent width
   function changePizzaSizes (size) {
     switch(size) {
       case "1":
@@ -437,8 +437,10 @@ var resizePizzas = function(size) {
         console.log("bug in sizeSwitcher");
       }
     
-    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+    // Sets document request outside the for loop and uses getElementsByClassName instead of querySelector to prevent a query to the DOM each time the loop iterates.
+    var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
 
+    // Gets rid of determine dx function and simply presents newWidth as a percentage of the width of the parent div.
     for (var i = 0; i < randomPizzas.length; i++) {
       randomPizzas[i].style.width = newWidth + "%";
     }
@@ -489,17 +491,13 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.getElementsByClassName("mover");
+  // Sets document.body request outside the for loop to prevent a query to the DOM each time the loop iterates.
   var docReq = document.body.scrollTop / 1250;
  
   for (var i = 0; i < items.length; i++){
     var phase = Math.sin((docReq) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
-
- /* for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-  } */
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
@@ -518,7 +516,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  // Generates pizzas based on viewport height.
+  // Determines number of pizzas generated based on viewport height.
   var rows = Math.round(window.screen.height / s);
   var pizzaCount = rows * cols;
   var movingPizzas = document.getElementById("movingPizzas1");
