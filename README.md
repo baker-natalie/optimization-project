@@ -26,7 +26,7 @@ The live page can be viewed at [mobile-portfolio.firebaseapp.com](https://mobile
 
 **The Goal**: Page renders at 60 frames per second when scrolling, the pizza size slider resizes pizza images in under 5ms.
 
-The live page can be viewed at mobile-portfolio.firebaseapp.com/views/pizza.html](https://mobile-portfolio.firebaseapp.com/views/pizza.html) Open the page in Chrome and use devTools to record a timeline trace of scrolling and changing the pizza sizes with the slider. The trace will show the frames per second for scrolling. The console will also display information about the frame generation rates.
+The live page can be viewed at [mobile-portfolio.firebaseapp.com/views/pizza.html](https://mobile-portfolio.firebaseapp.com/views/pizza.html) Open the page in Chrome and use devTools to record a timeline trace of scrolling and changing the pizza sizes with the slider. The trace will show the frames per second for scrolling. The console will also display information about the frame generation rates.
 
 #### Optimizations
 
