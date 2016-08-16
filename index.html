@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" FILL ME IN ">
+    <meta name="author" content=" FILL ME IN ">
+    <title>Hello Sweetie: A River Song Fanpage</title>
+
+    <!-- Most or all content for this page is "above the fold" for many browsers, so the styles for the main page are all inlined here. The external file is also loaded asynchronously to be available for the rest of the website. -->
+    <style type="text/css">header p{width:100%}.hero,footer{border-top:1px solid #ccc}footer span,li p{font-style:italic}html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}body{margin:0;font-size:14px;line-height:1.61;font-weight:400;background:#fff}b,header p,strong{font-weight:700}body,button,input,select,textarea{font-family:sans-serif;color:#333}a{text-decoration:none}a:visited{color:#61C}a:focus{outline:dotted thin}a:active,a:hover{color:#c00;outline:0}code,pre{font-family:monospace,monospace;font-size:1em}ol,ul{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}.container,footer,header{max-width:45em;margin:0 auto}header{padding:0 .5em;color:#C90B0B;text-align:center;height:150px;font-family:'Dancing Script',cursive;background-image:url(css/river-tota-01.jpg);background-size:contain;background-repeat:no-repeat}header p{font-size:3em}header p span{font-size:.5em;font-weight:400;max-width:100%}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc}.content li{list-style-type:none;font-size:1.1em}li img{float:left;padding-right:1em;max-width:100px}li p{font-size:.9em}footer{padding:0 .5em}footer span{float:right}@media only screen and (max-width:480px){body{font-size:12px}}</style>
+
+
+    <script>
+      (function(w,g){w['GoogleAnalyticsObject']=g;
+      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+      // Optional TODO: replace with your Google Analytics profile ID.
+      ga('create', 'UA-XXXX-Y');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="js/perfmatters.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <a href="#">
+      	<div id="header">
+ 		  <p>Hello Sweetie<br><span>A River Song Fanpage</span></p>
+ 		</div>
+ 	  </a>
+    </header>
+
+    <div class="container">
+      <div class="hero">
+        <strong>River Song</strong> is a popular character on BBC's <i>Doctor Who</i>. She first appeared in <i>Silence in the Library</i> (2008). Her most recent appearance was in <i>The Husbands of River Song</i> (2015). River is played by Alex Kingston, also known for her roles in NBC's <i>ER</i> (1996) and BBC's revival of <i>Upstairs Downstairs</i> (2012).<br> WARNING: Spoilers!
+      </div>
+
+      <div class="content">
+        <ul>
+          <li>
+            <img src="images/river-gun-01.jpg">
+            <a href="bio.html">Who is River Song?</a>
+            <p>"...this is my friend River. Nice hair, clever, has her own gun, and unlike me, she really doesn't mind shooting people. I shouldn't like that. Kind of do a bit." -The Doctor (6X02)</p>
+          </li>
+
+          <li>
+            <img src="images/melody-pond-1st-incarnation.jpg">
+            <a href="timeline.html">The Timeline of River Song</a>
+            <p>"Trouble is it's all back-to-front. My past is his future. We're travelling in opposite directions. Every time we meet, I know him more, he knows me less." -River Song (6X01)</p>
+          </li>
+
+          <li>
+            <img src="images/river-kiss.jpg">
+            <a href="quotes.html">Memorable Quotes</a>
+            <p>"Spoilers!" -River Song, at all times</p>
+          </li>
+
+          <li>
+            <img src="images/pizzeria.jpg">
+            <a href="views/pizza.html">Pizza Parlor Optimization</a>
+            <p>Did you like <strong>Hello Sweetie</strong>? Check out more sweet optimizations here!</p>
+          </li>
+        </ul>
+    </div>
+    <noscript id="deferred-styles">
+      <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+      <link href="css/style.css" rel="stylesheet">   
+      <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <footer>
+      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+    </footer>
+  </body>
+</html>
